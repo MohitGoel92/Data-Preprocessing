@@ -68,4 +68,4 @@ In the above code we observe that the StandardScaler is fitted to X_train but it
 
 Euclidean Distances diagram: https://en.wikipedia.org/wiki/Euclidean_distance
 
-Online LaTex writer: https://www.codecogs.com/latex/eqneditor.php 
+Online LaTex writer: https://www.codecogs.com/latex/eqneditor.php
