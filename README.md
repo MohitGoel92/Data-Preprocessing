@@ -32,9 +32,9 @@ Machine Learning models are based on Euclidean Distances. The below diagram illu
 
 If the features (variables/columns) have a very different range of values in comparison to other features, the feature with the larger range will outweigh the column with the smaller range. In this case, it will be as though the feature with the smaller range does not exist in the machine learning equations. We therefore transform the features onto the same scale, resulting in all values being within a short range. If the dependent variable also takes a huge range of values, we will apply feature scaling to the dependent variable as well.
 
-**Note:** If the Machine Learning models, for instance, Artificial Neural Networks or Decision Trees (ensemble learning) are not based on Euclidean Distances, we still need to apply Feature Scaling as the algorithm will converge must faster. If we do not apply Feature Scaling, our models may run for a very long time.
+**Note:** If the Machine Learning models, for instance, Artificial Neural Networks or Decision Trees (ensemble learning) are not based on Euclidean Distances, we still need to apply feature scaling as the algorithm will converge must faster. If we do not apply Feature Scaling, our models may run for a very long time.
 
-When applying Feature Scaling, we may either use Standardisation or Normalisation, both are given below:
+When applying feature scaling, we may either use Standardisation or Normalisation, both are given below:
 
 <img src = 'Formulas.png' width='350'>
 
@@ -42,7 +42,7 @@ When using Standardisation, the resulting values in the column will approximatel
 
 **Note:** Normalisation will be used only when our features mostly follow a normal distribution. Standardisation however can be used all the time and it will work.
 
-Feature scaling is applied after splitting the dataset into the training set and test set seperately. The test set is supposed to be a brand new set on which we evaluate our machine learning model on, we therefore do not work with the test set during the training. As we are taking the "Mean(X)" and "Standard Deviation(X)", if we apply feature scaling before the split we will be taking the Mean(X) and Standard Deviation(X) of all the dataset (the training set and test set inclusive), of which we are not suppose to have as the test dataset is representing new or future data. Therefore the essential reason why feature scaling is applied after the splitting of the training set and test is to prevent information leakage on the test set which we are not meant to have until the training of the machine learning model has been completed.
+Feature scaling is applied after splitting the dataset into the training set and test set seperately. The test set is supposed to be a brand new set on which we evaluate our machine learning model on. We therefore do not work with the test set while the machine learning model is training. As we are taking the "Mean(X)" and "Standard Deviation(X)", if we apply feature scaling before the split we will be taking the Mean(X) and Standard Deviation(X) of all the dataset (the training set and test set inclusive), of which we are not suppose to have as the test dataset is representing new or future data. Therefore the essential reason why feature scaling is applied after the splitting of the training set and test is to prevent information leakage on the test set which we are not meant to have until the training of the machine learning model has been completed.
 
 The code below is an example of splitting the dataset into the training set and test set, followed by feature scaling:
 
