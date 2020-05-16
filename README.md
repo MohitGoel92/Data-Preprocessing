@@ -30,9 +30,9 @@ Machine Learning models are based on Euclidean Distances. The below diagram illu
 
 <img src = 'Euclidean Distances Diagram.png' width='350'>
 
-If the features (variables/columns) have a very different range of values in comparison to each other, the feature with the larger range will outweigh the column with the smaller range. In this case, it will be as though the feature with the smaller range does not exist in the machine learning equations. We therefore transform the features onto the same scale, resulting in all values being within a short range. If the dependent variable also takes a huge range of values, we will apply feature scaling to the dependent variable as well.
+If the features (variables/columns) have a very different range of values in comparison to other features, the feature with the larger range will outweigh the column with the smaller range. In this case, it will be as though the feature with the smaller range does not exist in the machine learning equations. We therefore transform the features onto the same scale, resulting in all values being within a short range. If the dependent variable also takes a huge range of values, we will apply feature scaling to the dependent variable as well.
 
-**Note:** If the Machine Learning models, for instance, Artificial Neaural Networks or Decision Trees (ensemble learning) are not based on Euclidean Distances, we still need to apply Feature Scaling as the algorithm will converge must faster. If we do not apply Feature Scaling, our models may run for a very long time.
+**Note:** If the Machine Learning models, for instance, Artificial Neural Networks or Decision Trees (ensemble learning) are not based on Euclidean Distances, we still need to apply Feature Scaling as the algorithm will converge must faster. If we do not apply Feature Scaling, our models may run for a very long time.
 
 When applying Feature Scaling, we may either use Standardisation or Normalisation, both are given below:
 
