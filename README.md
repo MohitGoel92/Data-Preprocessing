@@ -22,7 +22,7 @@ X = ohe_X.fit_transform(X).toarray()
 
 ## Splitting the dataset into the training set and test set
 
-The training set is the set we build our model on and the test set is the set we are testing the performance of our machine learning model on. In theory, the performance of the test set should not be that different in comparison to the performance of the training set. This suggests a good correlation being detected by the machine learning model and a good understanding from the machine. As a rule of thumb, the size of the test set is usually between 0.2 and 0.4 (20%-40%).
+The training set is the dataset we build our model on and the test set is the dataset we are testing the performance of our machine learning model on. In theory, the performance of the test set should not be that different in comparison to the performance of the training set. This suggests a good correlation being detected by the machine learning model and a good understanding from the machine. As a rule of thumb, the size of the test set is usually between 0.2 and 0.4 (20%-40%).
 
 ## Feature Scaling
 
