@@ -28,7 +28,7 @@ The training set is the set we build our model on and the test set is the set we
 
 Machine Learning models are based on Euclidean Distances. The below diagram illustrates Euclidean Distances:
 
-
+<img src = 'ED.png' width='700'>
 
 Feature scaling is applied after splitting the dataset into the training set and test set. The test set is supposed to be a brand new set on which we evaluate our machine learning model on, we therefore do not work with the test set during the training. As we are taking the "Mean(X)" and "Standard Deviation(X)", if we apply feature scaling before the split we will be taking the Mean(X) and Standard Deviation(X) of all the dataset (the training set and test set inclusive), of which we are not suppose to have as the test dataset is representing new or future data. Therefore the essential reason why feature scaling is applied after the splitting of the training set and test is to prevent information leakage on the test set which we are not meant to have until the training of the machine learning model has been completed.
 
