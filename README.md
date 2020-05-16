@@ -60,9 +60,9 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 ```
 
-In the above code we observe that the StandardScaler is fitted to X_train but it is only transformed onto X_test. This is because "fit" gets the value for Mean(X) and Standard Deviation(X) of each feature, and these metrics that are taken from the training dataset are applied in transforming the values in the test dataset.
+In the above code we observe that the StandardScaler is fitted to X_train but it is only transformed onto X_test. This is because "fit" gets the value for Mean(X) and Standard Deviation(X) of each feature, and these metrics that are taken from the training dataset are applied in transforming the values in the test dataset. If "fit_transform" is applied to the test set as well, the feature scaling will use the Mean(X) and Standard Deviation(X) from the test set and not the training set.
 
-**Note:** We do not apply Feature Scaling to our encoded categorical variables as they are already within the same range. Also, due to the binary vectors corresponding to a categorical name, we will lose interpretability. Therefore, the Feature Scaler not helping with performance either. 
+**Note:** We do not apply feature scaling to our encoded categorical variables as they are already within the same range. Also, due to the binary vectors corresponding to a categorical name, we will lose interpretability. Therefore, the feature scaler not helping with performance either. 
 
 ## References
 
