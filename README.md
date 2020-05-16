@@ -36,7 +36,7 @@ If the features (variables/columns) have a very different range of values in com
 
 When applying Feature Scaling, we may either use Standardisation or Normalisation, both are given below:
 
-<img src = 'Formulas' width='350'>
+<img src = 'Formulas.png' width='350'>
 
 Feature scaling is applied after splitting the dataset into the training set and test set. The test set is supposed to be a brand new set on which we evaluate our machine learning model on, we therefore do not work with the test set during the training. As we are taking the "Mean(X)" and "Standard Deviation(X)", if we apply feature scaling before the split we will be taking the Mean(X) and Standard Deviation(X) of all the dataset (the training set and test set inclusive), of which we are not suppose to have as the test dataset is representing new or future data. Therefore the essential reason why feature scaling is applied after the splitting of the training set and test is to prevent information leakage on the test set which we are not meant to have until the training of the machine learning model has been completed.
 
